@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@keyframes borderAnimation {
+    0% {
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  .animate-border {
+    animation: borderAnimation 2s infinite;
+  }
+  
+  
